@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GIBS – Programs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --gold: #FFD700;
+      --gold-hover: #e6c200;
+      --dark: #333;
+      --light: #fff;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+    .navbar {
+      background-color: #333;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1rem 1.5rem;
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img {
+      height: 80px;
+      margin-right: 15px;
+    }
+    .navbar-brand strong {
+      color: #fff;
+      font-size: 1.8rem;
+    }
+    .navbar-brand small {
+      color: #FFD700;
+      font-size: 1rem;
+    }
+    .nav-link, .navbar-brand {
+      color: #fff !important;
+      font-weight: bold;
+    }
+    .nav-link.active {
+      color: var(--gold) !important;
+    }
+    .nav-link:hover {
+      color: var(--gold-hover) !important;
+    }
+    .section-title {
+      color: var(--gold);
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .list-group-item {
+      background-color: var(--light);
+      border: none;
+      padding: 10px 15px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .list-group-item:hover {
+      background-color: var(--gold-hover);
+      color: var(--light);
+      transform: translateY(-5px);
+    }
+    .list-group-item .hover-details {
+      display: none;
+      font-size: 0.9rem;
+      margin-top: 10px;
+      color: var(--dark);
+    }
+    .list-group-item:hover .hover-details {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.png" alt="GIBS Logo">
+        <div>
+          <strong style="font-size: 1.8rem;">GIBS</strong><br>
+          <small style="font-size: 1rem;">Ghana International Business School</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="consultants.html">Consultants</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li> <!-- New Gallery Menu -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About the Website Section -->
+  <section id="about-website" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-up">Welcome to GIBS</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        At Ghana International Business School (GIBS), we are committed to providing world-class education and training programs tailored to meet the needs of professionals, entrepreneurs, and organizations. Explore our diverse range of programs designed to empower you with the skills and knowledge needed to excel in today's competitive business environment.
+      </p>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Our Programs</h2>
+
+      <!-- Regular Programs -->
+      <div class="mb-5">
+        <h3 class="text-center mb-4">Regular Programs</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- LCGP -->
+          <div class="col">
+            <div class="card h-100" data-aos="fade-up">
+              <img src="images/lcgp.jpg" class="card-img-top" alt="Leadership & Corporate Governance Programme">
+              <div class="card-body">
+                <h5 class="card-title">Leadership & Corporate Governance Programme (LCGP)</h5>
+                <p><strong>Dates:</strong> June 25–27, 2025 &nbsp;|&nbsp; <strong>Fee:</strong> GHC 2,900</p>
+                <p>Explore corporate governance fundamentals, board roles, and leadership strategies.</p>
+                <a href="#" class="btn btn-outline-dark">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- SMP -->
+          <div class="col">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
+              <img src="images/smp.jpg" class="card-img-top" alt="Strategic Management Programme">
+              <div class="card-body">
+                <h5 class="card-title">Strategic Management Programme (SMP)</h5>
+                <p><strong>Dates:</strong> Sept 24–26, 2025 &nbsp;|&nbsp; <strong>Fee:</strong> GHC 2,900</p>
+                <p>Learn strategic planning, stakeholder engagement, and crisis management.</p>
+                <a href="#" class="btn btn-outline-dark">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- MPMP -->
+          <div class="col">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="200">
+              <img src="images/mpmp.jpg" class="card-img-top" alt="Marketing & Public Relations Management Programme">
+              <div class="card-body">
+                <h5 class="card-title">Marketing & Public Relations Management Programme (MPMP)</h5>
+                <p><strong>Dates:</strong> Oct 15–17, 2025 &nbsp;|&nbsp; <strong>Fee:</strong> GHC 2,900</p>
+                <p>Master marketing strategies, branding, and campaign ROI techniques.</p>
+                <a href="#" class="btn btn-outline-dark">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- SPAP -->
+          <div class="col">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="300">
+              <img src="images/spap.jpg" class="card-img-top" alt="Secretaries & Personal Assistants Programme">
+              <div class="card-body">
+                <h5 class="card-title">Secretaries & Personal Assistants Programme (SPAP)</h5>
+                <p><strong>Dates:</strong> Oct 22–24, 2025 &nbsp;|&nbsp; <strong>Fee:</strong> GHC 2,900</p>
+                <p>Enhance time management, event planning, and communication skills.</p>
+                <a href="#" class="btn btn-outline-dark">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special Programs -->
+      <div class="mb-5">
+        <h3 class="text-center mb-4">Special Programs</h3>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <strong>The Art and Science of Entrepreneurship</strong>
+            <div class="hover-details">
+              Learn the entrepreneurial mindset, risks, and rewards of starting a business, and how to create a business model canvas.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Strategic Business Planning and Management</strong>
+            <div class="hover-details">
+              Understand the importance of business plans, strategy frameworks, and how to present a professional business plan.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Fund Raising and Financial Management for Business</strong>
+            <div class="hover-details">
+              Explore techniques for raising funds, choosing capital providers, and managing post-funding relationships.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Introduction to International Transport and Logistics</strong>
+            <div class="hover-details">
+              Learn the basics of sea and air freight logistics, packaging procedures, and cross-border trade operations.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Meeting Standards in the Agri-Food Sector</strong>
+            <div class="hover-details">
+              Understand food safety standards, HACCP certification, and compliance for agri-food production.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Building Competitiveness in Trade Services</strong>
+            <div class="hover-details">
+              Discover strategies to enhance trade services competitiveness and the role of digital technology in trade.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Introduction to Supply Chain Management</strong>
+            <div class="hover-details">
+              Learn supply chain strategies, key competencies, and trade-offs to improve operational effectiveness.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Export Marketing Strategy within the AfCFTA Framework</strong>
+            <div class="hover-details">
+              Develop export marketing strategies and craft messages to target international customers effectively.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Introduction to E-Commerce & Digital Marketing</strong>
+            <div class="hover-details">
+              Explore e-commerce opportunities, market research, and strategies for launching an online sales channel.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Export Business Generation and Sales</strong>
+            <div class="hover-details">
+              Learn sales and negotiation tactics, value proposition creation, and preparation for international sales meetings.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Introduction to Cross-Border Contracts</strong>
+            <div class="hover-details">
+              Understand cross-border contracts, legal concepts, and terms like force majeure and compliance requirements.
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>Monitoring and Evaluation Programme</strong>
+            <div class="hover-details">
+              Gain skills in designing M&E systems, tracking performance indicators, and evaluating project outcomes.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Bespoke Training -->
+      <div>
+        <h3 class="text-center mb-4">Bespoke Training</h3>
+        <p class="text-center">Custom-made programs tailored to meet the unique needs of individuals and teams in private, public, and civil society sectors.</p>
+        <ul class="list-group">
+          <li class="list-group-item">The Peak Performance Programme (PPP)</li>
+          <li class="list-group-item">Executive Coaching</li>
+          <li class="list-group-item">Management Consulting</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
